@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+*,*::before,*::after {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+div {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    display: grid;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    align-items: center;
+    gap: 2em;
+    padding: 1.5em 0;
+    justify-content: space-between;
+}
+
+nav ul {
+    align-items: center;
+    gap: 2em;
+    opacity: 0;
+}
+
+.logo {
+    fill: black;
+}
+
+nav a {
+    font-size: 18px;
+    color: rgb(78, 73, 73);
+}
+
+nav li:nth-of-type(4) a {
+    color: rgb(126, 29, 126);
+}
+
+nav a:hover {
+    color: rgb(126, 29, 126);
+}
+
+.hero {
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    padding: 2em 0;
+    min-height: calc(100vh-88px);
+    background-image: url(graphic.png);
+    background-position: right;
+}
+
+.launch {
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position-x: 70%;
+    background-position-y: bottom;
+    background-size: 150px;
+    padding: 2em 0;
+    min-height: 200px;
+}
+
+.hero div, .launch div {
+    max-width: 500px;
+}
+
+.hero h6, .launch h6 {
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: rgb(126, 29, 126);
+    padding-top: 8em;
+}
+
+.hero h1 {
+    font-weight: 900;
+    font-size: clamp(60px, 10vw, 100px);
+    color: black;
+}
+
+.hero p, .launch p {
+    font-size: 20px;
+    color: rgb(78, 73, 73);
+    padding: 1em 0;
+}
+
+.hero a, .launch a {
+    font-size: 20px;
+    color: black;
+    border: 4px solid orange;
+    padding: 0.3em 1em;
+    border-radius: 100px;
+}
+
+.hero a:hover, .launch a:hover {
+    border-color: rgb(177, 45, 148);
+}
+
+.free {
+    position: relative;
+    align-items: center;
+    background-image: url(background.svg);
+    background-position: 25% 75%;
+    background-repeat: no-repeat;
+    background-size: 250%;
+    max-width: 100%;
+}
+
+.free-content h3 {
+    font-weight: 500;
+    font-size: clamp(40px, 48px, 40px);
+    color: black;
+    padding-top: 2em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+}
+
+.free-content p {
+    font-size: 20px;
+    color: black;
+    padding-left: 1em;
+    padding-bottom: 2em;
+}
+
+.logos {
+    width: 85%;
+    margin: 1rem auto;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+}    
+
+.logo>* {
+    flex: 1 1 5em;
+}
+
+.wrap {
+    max-width: 50%;
+}
+
+.auction {
+    padding: 2em 0;
+}
+
+.auction-content h2 {
+    font-weight: 500;
+    font-size: clamp(40px, 48px, 40px);
+    color: black;
+}
+
+.auction-content p {
+    font-size: 20px;
+    color: rgb(78, 73, 73);
+    padding: 1em 0;
+    
+}
+
+.auction-cards {
+    padding: 2em 0;
+    gap: 2em;
+    overflow-x: scroll;
+    font-size: 20px;
+}
+
+.auction-cards .card {
+    min-width: 290px;
+}
+
+.card-content row h6 h5 p {
+    align-items: center;
+}
+
+.launch {
+    background-image: url(upsell-footer-image.svg);
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: rgb(230, 217, 217);
+    margin: 2em;
+    padding-top: 2em;
+}
+
+.launch h1 {
+    font-weight: 900;
+    font-size: clamp(40px, 48px, 40px);
+    color: black;
+}
+
+footer {
+    padding: 2em 0;
+}
+
+.footer {
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 2em 0;
+}
+
+.footer>* {
+    flex: 1 1 25em;
+}
+
+.footer-content p {
+    font-size: 20px;
+    color: rgb(78, 73, 73);
+    padding: 1em 0;
+}
+
+.social-links {
+    align-items: center;
+    gap: 2em;
+}
+
+.social-links a {
+    fill: rgb(78, 73, 73);
+}
+
+.social-links a:hover {
+    fill: rgb(143, 77, 123);
+}
+
+.footer-links {
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
+
+.footer-links>* {
+    flex: 1 1 5em;
+}
+
+.footer-links h3 {
+    font-weight: 700;
+    color: rgb(78, 73, 73);
+    font-size: clamp(20px, 28px, 20px);
+    padding-bottom: 1em;
+}
+
+.footer-links li + li {
+    padding-top: 1em;
+}
+
+.footer-links a {
+    font-size: 16px;
+    color: rgb(78, 73, 73);
+}
+
+.footer-links a:hover {
+    color: rgb(143, 77, 123);
+}
+
+.copy-right {
+    text-align: center;
+    font-size: 14px;
+    color: rgb(78, 73, 73);
+    padding: 1em 0;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 800px) {
+    .menu {
+        position: absolute;
+        right: 5%;
+        background-image: url(menuicon.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        width: 30px;
+        height: 20px;
+        padding: 2em;
+    }
+}
+
+@media screen and (min-width: 800px) {
+   
+    .free {
+    max-width: 90%;
+    border-radius: 2em;
+    }
+
+    .auction-cards {
+        overflow-x: hidden;
+    }
+
+    .copy-right {
+        text-align: left;
+    }
+
+    nav ul {
+        opacity: 1;
+    }
+
+    .launch {
+        margin-left: 6em;
+    }
+}
